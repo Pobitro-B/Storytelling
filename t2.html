@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Storytelling</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="Untitled design (1).png" alt="Title" width="1500" height="600">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Laptop Price Analysis</h1>
+    <h5 class="w3-hide-large" style="white-space:nowrap">Laptop Price Analysis</h5>
+    <h3 class="w3-hide-medium w3-hide-small">Laptop Price Analysis</h3>
+  </div>
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="#datac" class="w3-bar-item w3-button">Collection</a>
+    <a href="#story" class="w3-bar-item w3-button">Storytelling</a>
+    <a href="https://docs.google.com/spreadsheets/d/1EVFpY2TS5HVzAXUF7z4cujzyZkK50h5iMEAr9zNtJQQ/edit?usp=sharing" class="w3-bar-item w3-button">Data</a>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+  <a href="#datac" class="w3-bar-item w3-button">Collection</a>
+  <a href="#story" class="w3-bar-item w3-button">Storytelling</a>
+  <a href="https://docs.google.com/spreadsheets/d/1EVFpY2TS5HVzAXUF7z4cujzyZkK50h5iMEAr9zNtJQQ/edit?usp=sharing" class="w3-bar-item w3-button">Data</a>
+</div>
+</div>
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="datac">
+  <h3 class="w3-center">Data Collection</h3>
+  <p style="text-align: center;">The data was collected by distributing a form to students of IIT Bhilai, with questions related to the laptops used by them, designed to gather insights on their experiences, opinions, and preferences. Each response was submitted voluntarily, ensuring a diverse range of perspectives. This method provided a structured yet flexible way to gather relevant information directly from the students.</p>
+  <!-- Images (Portfolio) -->
+  <figure>
+    <img src="Survey.png" alt="Survey" class="w3-image" width="500" height="250" style="display: block; margin-right: auto; margin-left: auto;">
+    <figcaption style="text-align: center;">Survey Form</figcaption>
+  </figure>
+  
+  <p>The form also had questions related to the phones of the students, which was used for another analysis and thus removed during data cleaning. Along with that, first few records were recorded with the students' emails. It was removed to add anonymity to the survey, which might have acted as a barrier for some students. The recorded emails were also removed.After that, few records with faulty information (eg. fake brands,very high/low prices, incorrect ages) were also removed. The data is now clean and ready for analysis</p>
+
+  <!-- Contact -->
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="story">
+    <h3 class="w3-center">Storytelling</h3>
+    <hr>
+    <p>Everyone remembers the day they first got into college. The rush of emotions—the excitement, the nervousness, the overwhelming realization that everything is about to change. New classes, new friends, and a brand-new chapter of life await. But before any of that, there is one crucial task: getting ready for college life.
+      <br><br>Preparation for college life means gearing up with all the essentials, and a laptop is at the top of the list. But what to buy? With countless options, each boasting cutting-edge features and wildly different price tags, the decision can feel overwhelming. For such situations, the best way to make a choice is by analysing experiences.
+      </p>
+    <p>So let's have a look at some possible choices from the survey responses:</p>
+    <hr>
+    <img src="g1.png"alt="Survey" class="w3-image" width="500" height="250" style="display: block; margin-right: auto; margin-left: auto;">
+    <p>Survey shows that most people balance price and performance, aiming for laptops that are neither too outdated nor absurdly expensive. The price distribution of laptops (histogram of price vs frequency) shows that the most preferred laptop price is around 70000. For this price, one can get either high-end business laptops or low-to-mid-end gaming laptops. </p>
+    <p>After looking at the price distribution, one might think about the brands of laptops and th laptops offered by them. Let's jump into the brand aspect of it: </p>
+    <img src="g2.png"alt="Survey" class="w3-image" width="500" height="250" style="display: block; margin-right: auto; margin-left: auto;">
+    <p>Some brands offer only high-end or premium laptops, some offer only budget laptops and others offer a mix of both. From the average price per brand chart(bar graph of data, grouped by brand), we can see that companies like MSI and Apple manufacture high-end premium laptops, while Acer manufactures laptops having a lower price. Other companies like HP, Dell, Asus and Lenovo have a wider range of products with an equally wide price range</p>
+    <img src="g3.png"alt="Survey" class="w3-image" width="500" height="250" style="display: block; margin-right: auto; margin-left: auto;">
+    <p>Another important aspect before making such a big purchase is the longevity of the device. Students may prefer the laptops which have a higher lifespan, ones which would work fine for their entire program at the institute. For this, the age of the laptop wa plotted against the price. This at first glance might seem a good way to figure out the lifespan and it actually is, but for this case, since many responses were from B.Tech students and M.Tech/M.Sc students, the age of laptop was less or equal to 4 </p>
+    <p>If we think about it, it is quite logical that the age would be concentrated in that region. For B.Tech students, many prefer to buy a new laptop at the start of their college life, something for which we are working in this study, which is often their first laptop. This has caused the age of laptop to be concentrated around 0-4 years, which is equal to the duration of the program. Therefore, for analysing the durability, some other parameter should have been collected and observed.</p>
+    <img src="g4.png"alt="Survey" class="w3-image" width="500" height="250" style="display: block; margin-right: auto; margin-left: auto;">
+    <p>But with this box plot, we can observe the durability with respect to brands and select the laptop which covers the duration of the program the student is enrolled in. HP, Dell and MSI can be een having the most durable laptops among those with students </p>
+    <img src="g5.png"alt="Survey" class="w3-image" width="500" height="250" style="display: block; margin-right: auto; margin-left: auto;">
+    <p>Looking at the average price of laptop for an age group, we can see that the young generation, our generation, prefers buying pricey laptops, which may not entirely be because of the spending habits. With the advancement in technology, new CPUs and GPUs are launched every few years. If one buys a fairly new product today, it is guarunteed to last at least 4-5 years. We can also see a huge peak at the other extreme. This is because these students are enrolledin PG programs and require more powerful laptops for their studies. Also, they are getting fellowships and/or have had jobs before joining, due to which they may have bought better machines.</p>
+    <p>Another interesting point here is the dip at 23 year olds. These kind of dips will be quite rare and generally due to some global/historic event, in this case, the pandemic. The prices fluctuated during that period because production was low, but people still neede more devices for WFH and online classes. This may have caused a drift from the ususal pattern.</p>
+    <img src="g6.png"alt="Survey" class="w3-image" width="500" height="250" style="display: block; margin-right: auto; margin-left: auto;">
+    <p>Lastly, an average student's laptop can be broadly classified into one of these three categories:
+      <li>Low priced and New Laptop</li>
+      <li>High priced and New Laptop</li>
+      <li>Low priced and Old Laptop</li>
+      A new student is classified into one of these two categories based on the choice of their laptop.
+    </p><br>
+    <p>Every person is unique, and that is reflected in their choices, even in their laptops! So for students looking for a laptop but are overwhelmed by the options and tired of researching, this analysis may help them decide their trusty machine!!</p>
+
+<!-- End page content -->
+</div>
+<script>
+        ScrollReveal().reveal('h2, canvas, ul li, p, img ,li, div', { delay: 200, distance: '20px', origin: 'bottom', duration: 800 });
+</script>
+
+</body>
+</html>
